@@ -1,0 +1,151 @@
+.contact-form-container {
+  /* display: flex; */
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.contact-head {
+  padding: 20px 30px;
+  
+}
+.contact-head h1{
+  text-align: center;
+   
+}
+
+.contact-form {
+  width: 100%;
+  /* max-width: 800px; */
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bolder;
+}
+
+.contact-form p {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group-half {
+  flex: 1;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0056b3;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.send-btn {
+  background-color: #00aaff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #007bbf;
+}
+
+.reset-btn {
+  background-color: #ffa500;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #cc8500;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  /* width: 100%; */
+  /* flex-direction: ; */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, black, blue);
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  height: 150px;
+  width: 300px;
+  /* margin: 10px; */
+}
+
+.contact-item:hover {
+  transform: scale(1.05);
+}
+
+.contact-item img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  transition: transform 1s ease;
+}
+
+.contact-item:hover img {
+  transform: rotate(1000deg);
+}
+
+.contact-item h3 {
+  color: yellow;
+  font-weight: bold;
+}
+
+.contact-item p {
+  color: white;
+  font-weight: bold;
+}

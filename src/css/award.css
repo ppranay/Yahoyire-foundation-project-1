@@ -1,0 +1,60 @@
+/* award.css */
+.text-and-image {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  h1{
+    margin-bottom: 0;
+    text-align: center;
+    /* margin-top: 20px; */
+    font-weight: bold;
+    color: #1a3e75 !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .text-content {
+    text-align: center;
+    flex: 1;
+    padding-right: 20px;
+    font-family: 'Arial', sans-serif; /* Example font family, adjust as needed */
+    /* font-size: 16px; Adjust font size */
+    line-height: 1.6; /* Improve readability */
+    /* color: #333; Text color */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
+ 
+  .image-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-content img {
+    width: 100%;
+    /* border: 5px double black; */
+    height: 600px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional rounded corners */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 24% 100%);
+  }
+  
+  @media (max-width: 768px) {
+    .text-and-image {
+      flex-direction: column; /* Stack text and image vertically on small screens */
+      height: auto; /* Remove full viewport height on small screens */
+    }
+  
+    .text-content {
+      padding-right: 0; /* Remove padding on small screens */
+      margin-bottom: 20px; /* Space between text and image on small screens */
+    }
+  
+    .image-content img {
+      width: 100%; /* Ensure image takes full width on small screens */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+  

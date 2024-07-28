@@ -1,0 +1,215 @@
+.team-container {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial, sans-serif';
+  }
+  h4{
+    text-align: justify;
+    margin-top: 50px;
+    color: black;
+  }
+  
+  .team-header {
+    margin-bottom: 20px;
+  }
+  
+  .team-header h1 {
+    font-size: 2.5em;
+    color: #1a3e75 ;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .member-photo {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .member-name {
+    font-size: 1.2em;
+    color: #004d40;
+  }
+  
+  .member-role {
+    font-size: 1em;
+    color: #ffab00;
+    margin-top: 5px;
+  }
+  
+  .team-footer {
+    margin-top: 20px;
+  }
+  
+  .team-footer p {
+    font-size: 1em;
+    color: #004d40;
+  }
+  .fundraiser-section {
+    background-color: #2F6E9C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .fundraiser-text {
+    color: #ffffff;
+    font-size: 1.2em;
+  }
+  
+  .fundraiser-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .fundraiser-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Responsive design for mobile devices */
+  @media (max-width: 768px) {
+    .fundraiser-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .fundraiser-text {
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+  
+    .fundraiser-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .fundraiser-section {
+      padding: 15px;
+    }
+  
+    .fundraiser-text {
+      font-size: 0.9em;
+    }
+  
+    .fundraiser-button {
+      padding: 10px;
+      font-size: 0.9em;
+    }
+  }
+  
+  /* ------------------------------------------------------------ */
+  .team-section {
+    /* background: url(../assets/gradient-dynamic-lines-background_23-2149082777.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* max-width: 900px; */
+    margin: 0 auto;
+  }
+  
+  .team-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .team-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .team-header p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .team-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .second-row {
+    justify-content: center;
+  }
+  
+  .team-member {
+    text-align: center;
+    margin: 10px;
+    background-color:  #ffab00;
+    width: 300px;
+  }
+  
+  .member-photo-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+  }
+  
+  .member-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2), 
+                0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 5px solid #fff;
+  }
+  
+  .team-member h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+ 
+  
+  .social-icons {
+    margin-left:-30px;
+    color: #555;
+    /* font-size: 1.2rem; */
+    cursor: pointer;
+  }
+  
+ 

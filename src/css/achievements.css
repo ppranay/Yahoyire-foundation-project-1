@@ -1,0 +1,43 @@
+ 
+ .page-header {
+  position: relative;
+  margin-bottom: 0;
+  padding: 210px 0 90px 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .4)), url(../assets/abt-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery {
+  padding: 20px;
+  background: linear-gradient(black, blue);
+}
+.gallery h1{
+  color: white !important;
+  padding-bottom: 80px;
+  padding-top: 40px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Four columns */
+  gap: 80px; /* Space between the boxes */
+  margin-bottom: 50px;
+}
+.gallery-item p{
+  color: black;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 270px;
+  display: block;
+  border: 5px double white;
+  border-radius: 8px; /* Optional: rounded corners for images */
+}
+.gallery-item img:hover{
+  transform: scale(1.5);
+  transition: 1s;
+}

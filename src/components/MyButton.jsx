@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PayNowButton = () => {
+const PayNowButton = ({ disabled })  => {
   const handlePayNowClick = () => {
     const paymentUrl = `${process.env.PUBLIC_URL}/hello.html`; // Adjust the path if needed
     window.open(paymentUrl, '_blank');
@@ -8,7 +8,7 @@ const PayNowButton = () => {
 
   return (
     <div>
-        
+
       <button onClick={handlePayNowClick} className="pay-now-button" style={{width:'100%'}}>
         Submit
       </button>

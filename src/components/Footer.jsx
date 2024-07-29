@@ -14,10 +14,10 @@ export default function Footer() {
                             <a href="mailto: yyf.ngo@gmail.com"><p><i className="fa fa-envelope"></i>  yyf.ngo@gmail.com</p></a>
                             <div className="footer-social">
                                 {/* <a className="btn btn-custom" href="https://twitter.com/vit_socials"><i className="fab fa-x-twitter"></i></a> */}
-                                <a className="btn btn-custom" href="https://www.facebook.com/vitsocials"><i className="fab fa-facebook-f"></i></a>
-                                <a className="btn btn-custom" href="https://www.instagram.com/vitsocials/"><i className="fab fa-instagram"></i></a>
+                                {/* <a className="btn btn-custom" href="https://www.facebook.com/vitsocials"><i className="fab fa-facebook-f"></i></a> */}
+                                {/* <a className="btn btn-custom" href="https://www.instagram.com/vitsocials/"><i className="fab fa-instagram"></i></a>
                                 <a className="btn btn-custom" href="https://www.youtube.com/channel/UCJnaNm8Ns08rUIhsdFM2fhA"><i className="fab fa-youtube"></i></a>
-                                <a className="btn btn-custom" href="https://www.linkedin.com/company/vit-social-welfare-development/"><i className="fab fa-whatsapp"></i></a>
+                                <a className="btn btn-custom" href="https://www.linkedin.com/company/vit-social-welfare-development/"><i className="fab fa-whatsapp"></i></a> */}
                             </div>
                         </div>
                     </div>

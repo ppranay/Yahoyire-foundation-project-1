@@ -14,6 +14,7 @@ import projectImage8 from '../../assets/emp/WhatsApp Image 2024-07-28 at 5.06.20
 import projectImage9 from '../../assets/emp/WhatsApp Image 2024-07-28 at 5.06.20 PM (2).jpeg'   
  
 import PageHeader from '../PageHeader';
+import Navbar from '../Navbar';
 
 const Project5 = () => {
   const items = [
@@ -33,6 +34,7 @@ const Project5 = () => {
 
   return (
     <div>
+        <Navbar/>
       <PageHeader title={'Learn And Earn'} />
       <div className="project-top">
         <div><h1>5.Learn And Earn </h1></div>

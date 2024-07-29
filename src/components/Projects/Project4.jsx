@@ -28,6 +28,7 @@ import projectImage18 from '../../assets/school/WhatsApp Image 2024-07-28 at 4.5
 
 
 import PageHeader from '../PageHeader';
+import Navbar from '../Navbar';
 
 const Project4 = () => {
   const items = [
@@ -66,6 +67,8 @@ const Project4 = () => {
 
   return (
     <div>
+
+        <Navbar/>
       <PageHeader title={' EduElevate Project'} />
       <div className="project-top">
         <div><h1>1.Special School</h1></div>

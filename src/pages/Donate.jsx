@@ -59,12 +59,12 @@ const Donate = () => {
               <div className="col-lg-7">
                 <div className="donate-content">
                   <div className="section-header">
-                    <p>Donate Now</p>
-                    <h2>Let's donate to needy people for better lives</h2>
+                    <p style={{color:'yellow'}}>Donate Now</p>
+                    <h2><span style={{color:'yellow'}}>CHANGING LIVES </span>, ONE DONATION AT A TIME</h2>
                   </div>
                   <div className="donate-text">
-                    <p>
-                      Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non. Aliquam metus tortor, auctor id gravida, viverra quis sem. Curabitur non nisl nec nisi maximus. Aenean convallis porttitor. Aliquam interdum at lacus non blandit.
+                    <p style={{fontSize:'25px'}}>
+                       A chance to do something for society and awaken your soul and feel great. The joy and satisfaction of bringing smile to the other through our organization 
                     </p>
                   </div>
                 </div>

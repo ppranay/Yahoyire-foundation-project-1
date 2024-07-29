@@ -35,6 +35,7 @@ import '../css/abtPageHeader.css'; // Ensure the path is correct
 import '../css/achievements.css'
 import AbtPageHeader from './AbtPageHeader';
 import Navbar from '../components/Navbar.jsx'
+import Footer from './Footer.jsx';
 
 const Achievements = () => {
   return (  
@@ -129,6 +130,8 @@ const Achievements = () => {
 
           </div>
         </div>
+
+        <Footer/>
         </>
   );
 }

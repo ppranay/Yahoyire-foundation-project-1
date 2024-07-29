@@ -24,6 +24,7 @@ import projectImage19 from '../../assets/go green 2/WhatsApp Image 2024-07-28 at
 import projectImage20 from '../../assets/go green 2/WhatsApp Image 2024-07-28 at 1.03.27 PM.jpeg';
 import projectImage21 from '../../assets/go green 2/WhatsApp Image 2024-07-28 at 12.58.52 PM.jpeg';
 import PageHeader from '../PageHeader';
+import Navbar from '../Navbar';
 
 const Project1 = () => {
   const items = [
@@ -52,6 +53,7 @@ const Project1 = () => {
 
   return (
     <div>
+        <Navbar/>
       <PageHeader title={'Go Green Project'} />
       <div className="project-top">
         <div><h1>1. Go Green Project</h1></div>

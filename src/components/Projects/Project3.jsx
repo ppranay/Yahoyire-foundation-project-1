@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../css/project.css';
 import { Link } from 'react-router-dom';
-import project from '../../assets/go green 2/gg vd.mp4';
+import project from '../../assets/health/health.mp4';
  
 import projectImage4 from '../../assets/health/WhatsApp Image 2024-07-28 at 1.54.59 PM (1).jpeg' ;
 import projectImage5 from '../../assets/health/WhatsApp Image 2024-07-28 at 1.55.06 PM.jpeg' ;
@@ -20,6 +20,7 @@ import projectImage17 from '../../assets/health/WhatsApp Image 2024-07-28 at 1.5
  
 import projectImage21 from '../../assets/health/WhatsApp Image 2024-07-28 at 1.55.05 PM (1).jpeg';
 import PageHeader from '../PageHeader';
+import Navbar from '../Navbar';
 
 const Project1 = () => {
   const items = [
@@ -49,21 +50,22 @@ const Project1 = () => {
 
   return (
     <div>
-      <PageHeader title={'Health Rise Project'} />
+        <Navbar/>
+      <PageHeader title={'HealthRise Project'} />
       <div className="project-top">
         <div><h1>3. Health Rise Project</h1></div>
         <div className="project-section">
           <div className="project-header"></div>
           <div className="project-gallery">
             <p>
-            The Health Project aims to improve the overall well-being of communities through accessible healthcare and preventive measures. This initiative includes establishing mobile clinics, organizing health camps, and providing essential medical services to underserved populations. The project also emphasizes health education, promoting practices like proper nutrition, hygiene, and regular exercise. By addressing both immediate health needs and long-term wellness strategies, the Health Project seeks to reduce disease prevalence, enhance health literacy, and ensure that everyone has the opportunity to lead a healthy life.
+            The HealthRise Project aims to improve the overall well-being of communities through accessible healthcare and preventive measures. This initiative includes establishing mobile clinics, organizing health camps, and providing essential medical services to underserved populations. The project also emphasizes health education, promoting practices like proper nutrition, hygiene, and regular exercise. By addressing both immediate health needs and long-term wellness strategies, the HealthRise Project seeks to reduce disease prevalence, enhance health literacy, and ensure that everyone has the opportunity to lead a healthy life.
             </p>
             {items.map((item, index) => (
               <div key={index} className="project-box">
                 {item.type === "image" ? (
                   <img src={item.src} alt={`Project ${index + 1}`} className="project-image" />
                 ) : (
-                  <video src={item.src} autoPlay loop controls className="project-video">
+                  <video src={item.src} autoPlay loop controls className="project">
                     Your browser does not support the video tag.
                   </video>
                 )}

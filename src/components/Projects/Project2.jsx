@@ -34,6 +34,7 @@ import projectImage26 from '../../assets/empher/WhatsApp Image 2024-07-28 at 1.4
 
 // import projectImage23 from '../../assets/go green 2/new g2.jpeg'
 import PageHeader from '../PageHeader';
+import Navbar from '../Navbar';
 
 const Project2 = () => {
   const images = [
@@ -72,6 +73,7 @@ const Project2 = () => {
 
   return (
     <div>
+        <Navbar/>
       <PageHeader title={'EmpowerHer Project'} />
       <video src={project} autoPlay loop muted>
         Your browser does not support the video tag.

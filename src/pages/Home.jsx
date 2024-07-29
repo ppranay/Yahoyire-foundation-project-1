@@ -36,7 +36,7 @@ export default function Home() {
     return (
         <>
             <Navbar />
-        <MyButton/>
+      
             <div className="video-container">
                 <Slider {...settings}>
                     <div>

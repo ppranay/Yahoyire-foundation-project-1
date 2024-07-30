@@ -18,6 +18,7 @@ import Project4 from "./components/Projects/Project4";
 import Project5 from "./components/Projects/Project5";
 import News from "./components/News";
 
+
 export default function App() {
   return (
     <BrowserRouter>

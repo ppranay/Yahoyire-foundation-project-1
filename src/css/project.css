@@ -1,26 +1,27 @@
 .project-section {
-  /* padding: 40px; */
-  /* background-color: green; */
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 20px;
   padding-bottom: 20px;
+  padding: 20px; /* Added padding for better spacing */
 }
 
 .project-top {
-  background: linear-gradient(90deg ,black, #3533cd);
+  background: linear-gradient(90deg, black, #3533cd);
   text-align: center;
+  padding: 20px; /* Added padding for better spacing */
 }
-.project-top h1{
-  padding-top: 40px;
+
+.project-top h1 {
+  padding-top: 20px; /* Reduced padding for better fit on smaller screens */
   color: white !important;
 }
 
 .project-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px; /* Reduced margin for better fit on smaller screens */
 }
 
 .project-header h2 {
@@ -37,9 +38,8 @@
 
 .project-gallery p {
   color: white;
-  /* font-size: 15px; */
-  /* text-align: justify; */
   padding-top: 0;
+  
 }
 
 .project-box {
@@ -60,23 +60,25 @@
 .project-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire box */
+  object-fit: cover;
 }
 
-/* .project-description {
-  padding: 20px;
-  text-align: center;
-  font-size: 1rem;
-  color: #333;
-} */
-
-/* Responsive design for mobile devices */
+/* Responsive design for tablets and smaller screens */
 @media (max-width: 768px) {
   .project-box {
     width: 45%;
   }
+
+  .project-header {
+    margin-bottom: 30px; /* Adjusted margin for better fit */
+  }
+
+  .project-header h2 {
+    font-size: 1.2rem; /* Adjusted font size for better readability */
+  }
 }
 
+/* Responsive design for mobile devices */
 @media (max-width: 480px) {
   .project-box {
     width: 100%;
@@ -89,5 +91,13 @@
 
   .project-box {
     margin-bottom: 20px;
+  }
+
+  .project-top h1 {
+    font-size: 1.8rem; /* Adjusted font size for better readability */
+  }
+
+  .project-header h2 {
+    font-size: 1rem; /* Adjusted font size for better readability */
   }
 }

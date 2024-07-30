@@ -10,7 +10,7 @@ const PayNowButton = ({ disabled })  => {
     <div>
 
       <button onClick={handlePayNowClick} className="pay-now-button" style={{width:'100%'}}>
-        Submit
+        I accept And Pay now
       </button>
     </div>
   );

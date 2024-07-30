@@ -243,11 +243,7 @@ const VolunteerForm = () => {
                                 onChange={handleChange}
                                 required
                             />
-                         <iframe
-        src={`${process.env.PUBLIC_URL}/hello.html`}
-        style={{  height:'100vh', border: 'none', }}
-        title="Hello HTML Page"
-      ></iframe>
+                   
                         </div>
                     </form>
                 </>

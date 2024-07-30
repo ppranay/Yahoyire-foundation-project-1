@@ -12,12 +12,14 @@ import Team from "../components/Team";
 import Award from "../components/Award";
 import Objective from "../components/Objective";
 import KeyFocus from "../components/KeyFocus";
+import AbtPageHeader from "../components/AbtPageHeader";
 
  function About() {
   return (
     <>
       <Navbar />
-      <PageHeader title="ABOUT US" path="/about" name="About Us" />
+      <PageHeader title="About Us" path="/about" name="About Us"/>
+      
       {/* <About2/> */}
       <Award/>
       {/* <Landing /> */}

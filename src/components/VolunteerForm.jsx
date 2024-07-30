@@ -108,7 +108,7 @@ const VolunteerForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="zipCode">ZIP:</label>
+          <label htmlFor="zipCode">Pincode:</label>
           <input
             type="text"
             id="zipCode"
@@ -144,9 +144,9 @@ const VolunteerForm = () => {
 
         <h3>Availability</h3>
         <div className="form-group">
-          <label htmlFor="contactName">Days Available::</label>
+          <label htmlFor="contactName">Days Available in a month:</label>
           <input
-            type="date"
+            type="text"
             id="contactName"
             name="contactName"
             value={formData.contactName}
@@ -155,9 +155,9 @@ const VolunteerForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="contactPosition">Times Available::</label>
+          <label htmlFor="contactPosition">Contribution Time (in a Day):</label>
           <input
-            type="time"
+            type="text"
             id="contactPosition"
             name="contactPosition"
             value={formData.contactPosition}
@@ -226,50 +226,44 @@ const VolunteerForm = () => {
         </div>
 
         <h3>Skills and Experience: (Check all that apply):</h3>
-        <div className="checkbox-group">
+        <div className="form-group">
+          <label htmlFor="contactName">Relevant Experience:</label>
+          <input
+            type="text"
+            id="contactName"
+            name="contactName"
+            value={formData.contactName}
+            onChange={handleChange}
+            required
+          />
           <label>
+          Special Skills
             <input
-              type="checkbox"
-              name="Health Initiatives"
-              checked={formData.interestAreas.includes('Health Initiatives')}
-              onChange={(e) => handleCheckboxChange(e, 'interestAreas')}
-            />
-            Relevant Experience
-          </label>
-          <label>
-            <input
-              type="checkbox"
+              type="text"
               name="Children's Education"
               checked={formData.interestAreas.includes("Children's Education")}
               onChange={(e) => handleCheckboxChange(e, 'interestAreas')}
             />
-            Special Skills
+           
           </label>
           <label>
+          Certificates (if any)
             <input
-              type="checkbox"
+              type="text"
               name="Employment Programs"
               checked={formData.interestAreas.includes('Employment Programs')}
               onChange={(e) => handleCheckboxChange(e, 'interestAreas')}
             />
-            Certifications (if any)
+          
           </label>
-          <label>
-            <input
-              type="checkbox"
-              name="Environmental Awareness"
-              checked={formData.interestAreas.includes('Environmental Awareness')}
-              onChange={(e) => handleCheckboxChange(e, 'interestAreas')}
-            />
-            Environmental Awareness
-          </label>
+          
         </div>
 
         <h3>Emergency Contact:</h3>
         <div className="form-group">
           <label htmlFor="contactPosition">Name:</label>
           <input
-            type="time"
+            type="text"
             id="contactPosition"
             name="contactPosition"
             value={formData.contactPosition}
@@ -280,7 +274,7 @@ const VolunteerForm = () => {
         <div className="form-group">
           <label htmlFor="contactPosition">Relationship :</label>
           <input
-            type="time"
+            type="text"
             id="contactPosition"
             name="contactPosition"
             value={formData.contactPosition}
@@ -293,7 +287,7 @@ const VolunteerForm = () => {
         <div className="form-group">
           <label htmlFor="contactPosition"> Phone Number :</label>
           <input
-            type="time"
+            type="number"
             id="contactPosition"
             name="contactPosition"
             value={formData.contactPosition}
@@ -302,9 +296,40 @@ const VolunteerForm = () => {
           />
         </div>
         
-         
+        <h3>Please Upload Your Documents:</h3>
+        <div className="form-group">
+          <label htmlFor="contactPosition">Adhar Card (Front Side):</label>
+          <input
+            type="file"
+            id="contactPosition"
+            name="contactPosition"
+            value={formData.contactPosition}
+            onChange={handleChange}
+            required
+          />
+          <label htmlFor="contactPosition">Adhar Card (Back Side):</label>
+          <input
+            type="file"
+            id="contactPosition"
+            name="contactPosition"
+            value={formData.contactPosition}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="contactPosition">Pan Card :</label>
+          <input
+            type="file"
+            id="contactPosition"
+            name="contactPosition"
+            value={formData.contactPosition}
+            onChange={handleChange}
+            required
+          />
+        </div>
 
-        <h3>Agreement <h6>I agree to abide by the rules and regulations of Yehova Yire Foundation. I understand that my participation is voluntary and I will not receive monetary compensation.
+        {/* <h3>Agreement <h6>I agree to abide by the rules and regulations of Yehova Yire Foundation. I understand that my participation is voluntary and I will not receive monetary compensation.
         </h6></h3>
         <div className="form-group">
           <label htmlFor="signature">Authorized Signature:</label>
@@ -341,12 +366,12 @@ const VolunteerForm = () => {
             name="date"
             required
           />
-        </div>
+        </div> */}
 
 
 
 
-        <button type="button" class="  btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" class="p-1  btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
          Submit
         </button>
 
@@ -354,49 +379,56 @@ const VolunteerForm = () => {
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel"> Rules and Regulations for Corporate/Group Members</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel"> Volunteer Rules and Regulations:</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
               
            
            <ol>
-            <li><b>Commitment:-</b>
-            <p>Companies/Groups must fulfill their commitments as agreed in the partnership arrangement.</p></li>
+            <li><b>Attendance:-</b>
+            <p>Volunteers must commit to the agreed schedule and notify the coordinator of any changes.</p></li>
 
             <li><b>Conduct  :-</b>
-              <p> Partners must conduct themselves in a manner that upholds the values and reputation of the NGO.</p>            
+              <p> Volunteers must maintain professionalism and respect towards staff, fellow volunteers, and beneficiaries.
+              Confidentiality: Volunteers must respect the privacy of the individuals and information they work with.</p>            
             </li>
 
-            <li><b>Transparency  :-</b>
-              <p> Partners should provide accurate information about their activities and any support they offer.</p>            
+            <li><b>Training:-</b>
+              <p> Volunteers are required to attend orientation and any relevant training sessions.</p>            
             </li>
 
-            <li><b> Communication :-</b>
-              <p>Regular communication with the NGO is required to ensure alignment and coordination.</p>            
+            <li><b> Safety :-</b>
+              <p> Volunteers must adhere to safety guidelines and report any hazards immediately.</p>            
             </li>
 
             <li><b> Confidentiality :-</b>
-              <p>Sensitive information shared between the NGO and the partner must be kept confidential.</p>            
+              <p>Volunteers must respect the privacy of the individuals and information they work with.</p>            
             </li>
 
             <li><b>Reporting  :-</b>
-              <p> Partners should report on their contributions and involvement as agreed upon in the partnership</p>            
+              <p>Volunteers should report their activities and hours regularly to the volunteer coordinator.</p>            
             </li>
 
-            <li><b> Compliance :-</b>
-              <p>Partners must comply with all relevant legal and regulatory requirements related to their support of the NGO.</p>            
+            <li><b> Termination :-</b>
+              <p>The NGO reserves the right to terminate volunteer services for misconduct or breach of rules.</p>            
             </li>
 
-
-            <li><b>  Termination:-</b>
-              <p>The NGO reserves the right to terminate the partnership if the company/group fails to adhere to the agreed terms or engages in conduct detrimental to the NGO’s mission.</p>            
-            </li>
-
+            <label>
+              
+            <input
+            
+              type="checkbox"
+              name="Other"
+              checked={formData.partnershipTypes.includes('Other')}
+              onChange={(e) => handleCheckboxChange(e, 'partnershipTypes')}
+            />
+           I agree to abide by the rules and regulations of Yehova Yire Foundation. I understand that my participation is voluntary and I will not receive monetary compensation.
+          </label>
            </ol>
               </div>
               <div class="modal-footer-1">
-                {/* <button type="button" class=" " data-bs-dismiss="modal">Close</button> */}
+            
                   <MyButton/>
                   
                  
@@ -404,9 +436,7 @@ const VolunteerForm = () => {
             </div>
           </div>
         </div>
-        {/* <div className="form-group submit-button">
-       <MyButton/>
-      </div> */}
+       
       </form>
 
     </>

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import '../css/membership.css';
 import logo from '../assets/faundation.png'
 import MyButton from '../components/MyButton.jsx'
+import Navbar from '../components/Navbar.jsx'
 
 const PartnershipForm = () => {
   const [formData, setFormData] = useState({
@@ -46,6 +47,7 @@ const PartnershipForm = () => {
 
   return (
     <>
+    <Navbar/>
       <div className="form-top">
         <img src={logo} alt="Foundation Logo" />
         <h1>BECOME A MEMBER OF THE ENERGETIC TEAM</h1>
@@ -97,7 +99,7 @@ const PartnershipForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="zipCode">ZIP:</label>
+          <label htmlFor="zipCode">Pincode:</label>
           <input
             type="text"
             id="zipCode"
@@ -305,50 +307,79 @@ const PartnershipForm = () => {
           />
         </div>
 
-        <h3>Agreement <h6>We agree to support Yehova Yire Foundation and adhere to its mission and values. We understand that our participation is subject to the rules and regulations set forth by the NGO.
-        </h6></h3>
-        <div className="form-group">
-          <label htmlFor="signature">Authorized Signature:</label>
+
+        <h3>Please Upload Your Documents:</h3>
+        <div className="flex-container-member">
+          <div className="flex-item-member">
+            
+          <h3>Company details:</h3>
+          <div className="form-group">
+          <label htmlFor="contactPosition">Company pan Card:</label>
           <input
             type="file"
-            id="signature"
-            name="signature"
+            id="contactPosition"
+            name="contactPosition"
+            value={formData.contactPosition}
+            onChange={handleChange}
+            required
+          /> <label htmlFor="contactPosition">Company Certificate:</label>
+          <input
+            type="file"
+            id="contactPosition"
+            name="contactPosition"
+            value={formData.contactPosition}
+            onChange={handleChange}
+            required
+          />
+          
+        </div>
+          </div>
+          
+          <div className="flex-item-member"> <h3>Company representatives details:</h3>
+        <div className="form-group">
+          <label htmlFor="contactPosition">Adhar Card (Front Side):</label>
+          <input
+            type="file"
+            id="contactPosition"
+            name="contactPosition"
+            value={formData.contactPosition}
+            onChange={handleChange}
+            required
+          />
+          <label htmlFor="contactPosition">Adhar Card (Back Side):</label>
+          <input
+            type="file"
+            id="contactPosition"
+            name="contactPosition"
+            value={formData.contactPosition}
+            onChange={handleChange}
             required
           />
         </div>
         <div className="form-group">
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="contactPosition">Pan Card :</label>
           <input
-            type="text"
-            id="name"
-            name="name"
+            type="file"
+            id="contactPosition"
+            name="contactPosition"
+            value={formData.contactPosition}
+            onChange={handleChange}
             required
           />
+        </div></div>
         </div>
-        <div className="form-group">
-          <label htmlFor="title">Title:</label>
-          <input
-            type="text"
-            id="title"
-            name="title"
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="date">Date:</label>
-          <input
-            type="date"
-            id="date"
-            name="date"
-            required
-          />
-        </div>
+
+
+
+
+
+       
 
 
 
 
         <button type="button" class="  btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-         Submit
+          Submit
         </button>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -359,48 +390,58 @@ const PartnershipForm = () => {
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-              
-           
-           <ol>
-            <li><b>Commitment:-</b>
-            <p>Companies/Groups must fulfill their commitments as agreed in the partnership arrangement.</p></li>
-
-            <li><b>Conduct  :-</b>
-              <p> Partners must conduct themselves in a manner that upholds the values and reputation of the NGO.</p>            
-            </li>
-
-            <li><b>Transparency  :-</b>
-              <p> Partners should provide accurate information about their activities and any support they offer.</p>            
-            </li>
-
-            <li><b> Communication :-</b>
-              <p>Regular communication with the NGO is required to ensure alignment and coordination.</p>            
-            </li>
-
-            <li><b> Confidentiality :-</b>
-              <p>Sensitive information shared between the NGO and the partner must be kept confidential.</p>            
-            </li>
-
-            <li><b>Reporting  :-</b>
-              <p> Partners should report on their contributions and involvement as agreed upon in the partnership</p>            
-            </li>
-
-            <li><b> Compliance :-</b>
-              <p>Partners must comply with all relevant legal and regulatory requirements related to their support of the NGO.</p>            
-            </li>
 
 
-            <li><b>  Termination:-</b>
-              <p>The NGO reserves the right to terminate the partnership if the company/group fails to adhere to the agreed terms or engages in conduct detrimental to the NGO’s mission.</p>            
-            </li>
+                <ol>
+                  <li><b>Commitment:-</b>
+                    <p>Companies/Groups must fulfill their commitments as agreed in the partnership arrangement.</p></li>
 
-           </ol>
+                  <li><b>Conduct  :-</b>
+                    <p> Partners must conduct themselves in a manner that upholds the values and reputation of the NGO.</p>
+                  </li>
+
+                  <li><b>Transparency  :-</b>
+                    <p> Partners should provide accurate information about their activities and any support they offer.</p>
+                  </li>
+
+                  <li><b> Communication :-</b>
+                    <p>Regular communication with the NGO is required to ensure alignment and coordination.</p>
+                  </li>
+
+                  <li><b> Confidentiality :-</b>
+                    <p>Sensitive information shared between the NGO and the partner must be kept confidential.</p>
+                  </li>
+
+                  <li><b>Reporting  :-</b>
+                    <p> Partners should report on their contributions and involvement as agreed upon in the partnership</p>
+                  </li>
+
+                  <li><b> Compliance :-</b>
+                    <p>Partners must comply with all relevant legal and regulatory requirements related to their support of the NGO.</p>
+                  </li>
+
+
+                  <li><b>  Termination:-</b>
+                    <p>The NGO reserves the right to terminate the partnership if the company/group fails to adhere to the agreed terms or engages in conduct detrimental to the NGO’s mission.</p>
+                  </li>
+                  <label>
+
+                    <input
+
+                      type="checkbox"
+                      name="Other"
+                      checked={formData.partnershipTypes.includes('Other')}
+                      onChange={(e) => handleCheckboxChange(e, 'partnershipTypes')}
+                    />
+                    I agree to abide by the rules and regulations of Yehova Yire Foundation. I understand that my participation is voluntary and I will not receive monetary compensation.
+                  </label>
+                </ol>
               </div>
               <div class="modal-footer-1">
                 {/* <button type="button" class=" " data-bs-dismiss="modal">Close</button> */}
-                  <MyButton/>
-                  
-                 
+                <MyButton />
+
+
               </div>
             </div>
           </div>

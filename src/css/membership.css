@@ -124,3 +124,13 @@
     align-items: flex-start; /* Align checkboxes to start on smaller screens */
   }
 }
+.flex-container-member {
+  display: flex;
+  gap: 20px;
+}
+.flex-item-member{
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}

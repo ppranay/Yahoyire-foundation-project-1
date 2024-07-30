@@ -5,6 +5,7 @@ import '../css/donate.css';
 import PageHeader from '../components/PageHeader.jsx'
 import loadScript from '../utils/loadScript';
 import Footer from '../components/Footer.jsx'
+import video from '../assets/donation.mp4'
 // import  BackToTop from '../components/BackToTop.jsx'
 
 const Donate = () => {
@@ -48,10 +49,9 @@ const Donate = () => {
   return (
     <>
     <div>
-    <PageHeader title={"Donate Now"} path={"/donate"} name={"Donate"} />
-      {/* <Card amount={5000} checkoutHandler={checkoutHandler} /> */}
-      {/* <Card amount={500} checkoutHandler={checkoutHandler} /> */}
-
+    <video src={video} autoPlay loop controls className="project-video">
+                    Your browser does not support the video tag.
+                  </video>
       <div className="donations">
         <div className="container">
           <div className="donate">

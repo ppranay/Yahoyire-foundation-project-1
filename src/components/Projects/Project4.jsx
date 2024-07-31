@@ -71,13 +71,15 @@ const Project4 = () => {
         <Navbar/>
       <PageHeader title={' EduElevate Project'} />
       <div className="project-top">
+        <p style={{color:'white'}}>The Education Project focuses on enhancing learning outcomes and engagement in schools. It involves developing interactive curricula, integrating technology, and providing teacher training to support effective instruction. Key activities include creating hands-on learning experiences, organizing workshops, and utilizing digital tools to enrich the classroom environment. The project aims to improve student performance, foster a love for learning, and equip educators with innovative teaching strategies. Through these efforts, the project seeks to create a more engaging and effective educational experience for students.</p>
         <div><h1>1.Special School</h1></div>
         
         <div className="project-section">
 
           <div className="project-header"></div>
+          
           <div className="project-gallery">
-          <p>The Education Project focuses on enhancing learning outcomes and engagement in schools. It involves developing interactive curricula, integrating technology, and providing teacher training to support effective instruction. Key activities include creating hands-on learning experiences, organizing workshops, and utilizing digital tools to enrich the classroom environment. The project aims to improve student performance, foster a love for learning, and equip educators with innovative teaching strategies. Through these efforts, the project seeks to create a more engaging and effective educational experience for students.</p>
+        
             
              {items.map((image, index) => (
               <div key={index} className="project-box">

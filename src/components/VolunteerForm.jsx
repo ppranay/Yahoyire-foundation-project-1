@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import '../css/membership.css';
 import logo from '../assets/faundation.png'
 import MyButton from '../components/MyButton.jsx'
+import Navbar from '../components/Navbar.jsx'
 
 const VolunteerForm = () => {
   const [formData, setFormData] = useState({
@@ -46,6 +47,7 @@ const VolunteerForm = () => {
 
   return (
     <>
+    <Navbar/>
       <div className="form-top">
         <img src={logo} alt="Foundation Logo" />
         <h1>Volunteer Application Form</h1>

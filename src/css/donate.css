@@ -270,3 +270,14 @@
   outline: none; /* No outline on focus */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow on focus */
 }
+.box-donate{
+height: 100px;
+background: linear-gradient(black,blue);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.box-donate h1{
+  color: white !important;
+ 
+}

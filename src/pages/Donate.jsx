@@ -48,6 +48,9 @@ const Donate = () => {
 
   return (
     <>
+    <div className="box-donate">
+      <h1>Donate Now</h1>
+    </div>
     <div>
     <video src={video} autoPlay loop controls className="project-video">
                     Your browser does not support the video tag.

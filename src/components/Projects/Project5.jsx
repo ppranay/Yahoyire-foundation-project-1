@@ -47,13 +47,13 @@ const Project5 = () => {
             {items.map((item, index) => (
               <div key={index} className="project-box">
                 {item.type === "image" ? (
-                  <img src={item.src} alt={`Project ${index + 1}`} className="project-image" />
+                  <img src={item.src} alt={`Project ${index + 1}`} className="project-image border" />
                 ) : (
                   <video src={item.src} autoPlay loop controls className="project-video">
                     Your browser does not support the video tag.
                   </video>
                 )}
-                <div className="project-description">{item.description}</div>
+                {/* <div className="project-description">{item.description}</div> */}
               </div>
             ))}
           </div>

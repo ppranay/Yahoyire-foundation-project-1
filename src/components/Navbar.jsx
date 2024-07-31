@@ -111,7 +111,9 @@ export default function Navbar() {
                                     <Link to="/project5" className="dropdown-item">Learn and earn</Link>
                                 </div>
                             </div>
-                            <Link to="/donate" className={`nav-item nav-link ${path === '/donate' ? "active" : ""}`}>Donate</Link>
+                           
+                           <Link to="/donate" className={`nav-item done nav-link ${path === '/donate' ? "active" : ""}`}>Donate</Link>
+                         
                         </div>
                     </div>
                 </div>

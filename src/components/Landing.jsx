@@ -7,12 +7,14 @@ import abt from '../assets/about.png'
 const AboutUs = () => {
   return (
 
-    <>    <div className="about-us">
+    <> 
+       <div className="about-us">
       <h1>ABOUT US</h1>
       <img src={abt} alt="" />
       <Link to={"/about"}>
-        <button className='btn'>Read More</button>
+        <button className='btn btn-success mx-auto d-block mt-3'>Read More</button>
       </Link>
+      
     </div>
 
 

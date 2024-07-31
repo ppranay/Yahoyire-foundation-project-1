@@ -69,7 +69,7 @@ const Project1 = () => {
                     Your browser does not support the video tag.
                   </video>
                 )}
-                <div className="project-description">{item.description}</div>
+                {/* <div className="project-description">{item.description}</div> */}
               </div>
             ))}
           </div>

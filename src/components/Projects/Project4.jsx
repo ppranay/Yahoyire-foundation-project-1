@@ -72,16 +72,17 @@ const Project4 = () => {
       <PageHeader title={' EduElevate Project'} />
       <div className="project-top">
         <div><h1>1.Special School</h1></div>
+        
         <div className="project-section">
+
           <div className="project-header"></div>
           <div className="project-gallery">
-            {/* <p>
-            The Health Project aims to improve the overall well-being of communities through accessible healthcare and preventive measures. This initiative includes establishing mobile clinics, organizing health camps, and providing essential medical services to underserved populations. The project also emphasizes health education, promoting practices like proper nutrition, hygiene, and regular exercise. By addressing both immediate health needs and long-term wellness strategies, the Health Project seeks to reduce disease prevalence, enhance health literacy, and ensure that everyone has the opportunity to lead a healthy life.
-            </p> */}
+          <p>The Education Project focuses on enhancing learning outcomes and engagement in schools. It involves developing interactive curricula, integrating technology, and providing teacher training to support effective instruction. Key activities include creating hands-on learning experiences, organizing workshops, and utilizing digital tools to enrich the classroom environment. The project aims to improve student performance, foster a love for learning, and equip educators with innovative teaching strategies. Through these efforts, the project seeks to create a more engaging and effective educational experience for students.</p>
+            
              {items.map((image, index) => (
               <div key={index} className="project-box">
                 <img src={image.src} alt={`Project ${index + 1}`} className="project-image" />
-                <div className="project-description">{image.description}</div>
+                 
               </div>
             ))}
           </div>
@@ -91,9 +92,7 @@ const Project4 = () => {
         <div className="project-section">
           <div className="project-header"></div>
           <div className="project-gallery">
-            {/* <p>
-            The Health Project aims to improve the overall well-being of communities through accessible healthcare and preventive measures. This initiative includes establishing mobile clinics, organizing health camps, and providing essential medical services to underserved populations. The project also emphasizes health education, promoting practices like proper nutrition, hygiene, and regular exercise. By addressing both immediate health needs and long-term wellness strategies, the Health Project seeks to reduce disease prevalence, enhance health literacy, and ensure that everyone has the opportunity to lead a healthy life.
-            </p> */}
+         
              {item.map((image, index) => (
               <div key={index} className="project-box">
                 <img src={image.src} alt={`Project ${index + 1}`} className="project-image" />
@@ -108,13 +107,11 @@ const Project4 = () => {
         <div className="project-section">
           <div className="project-header"></div>
           <div className="project-gallery">
-            {/* <p>
-            The Health Project aims to improve the overall well-being of communities through accessible healthcare and preventive measures. This initiative includes establishing mobile clinics, organizing health camps, and providing essential medical services to underserved populations. The project also emphasizes health education, promoting practices like proper nutrition, hygiene, and regular exercise. By addressing both immediate health needs and long-term wellness strategies, the Health Project seeks to reduce disease prevalence, enhance health literacy, and ensure that everyone has the opportunity to lead a healthy life.
-            </p> */}
+            
              {College.map((image, index) => (
               <div key={index} className="project-box">
                 <img src={image.src} alt={`Project ${index + 1}`} className="project-image" />
-                <div className="project-description">{image.description}</div>
+                 
               </div>
             ))}
           </div>

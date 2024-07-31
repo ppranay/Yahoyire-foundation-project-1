@@ -70,10 +70,10 @@
     color: #fff;
   }
   
-  .wrapper-1 .twitter:hover,
-  .wrapper-1 .twitter:hover .tooltip,
-  .wrapper-1 .twitter:hover .tooltip::before {
-    background: #1da1f2;
+  .wrapper-1 .whats-app:hover,
+  .wrapper-1 .whats-app:hover .tooltip,
+  .wrapper-1 .whats-app:hover .tooltip::before {
+    background: rgb(32, 101, 32);
     color: #fff;
   }
   

@@ -89,7 +89,7 @@ const Project2 = () => {
             {images.map((image, index) => (
               <div key={index} className="project-box">
                 <img src={image.src} alt={`Project ${index + 1}`} className="project-image" />
-                <div className="project-description">{image.description}</div>
+                {/* <div className="project-description">{image.description}</div> */}
               </div>
             ))}
           </div>

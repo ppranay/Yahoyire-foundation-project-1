@@ -7,8 +7,8 @@ const Events = () => {
     <div>
        
         <div className="event">
-        <h1 >OUR UPCOMING EVENT</h1>
-            <h2>VIDARBH SOCIAL WORKER AND UDYOGRATNA PURASKAR  <br /> <span>Date:-3rd-Aug-2024</span> </h2>
+        <h1>OUR UPCOMING EVENT</h1>
+            <h2>Vidarbha Social Worker And Udhyog Ratan Pursakar <br /> <span>Date:-3rd-Aug-2024</span> </h2>
             
             <img src={img2} alt="Image 1" />
 

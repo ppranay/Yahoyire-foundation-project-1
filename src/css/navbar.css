@@ -185,7 +185,7 @@
     }
     .navbar {
         padding: 15px;
-        background: #20212B !important;
+        background:linear-gradient(black, blue) !important;
     }
     
     .navbar a.nav-link {
